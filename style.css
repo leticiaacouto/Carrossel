@@ -1,0 +1,139 @@
+@charset "utf-8";
+@font-face{
+    font-family: fonte1;
+    src: url(./fontes/The\ Amazing\ Spider-Man.ttf);
+}
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    /* border: solid 1px #8f0000; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #8f0000;
+}
+
+
+h1{
+    font-family: fonte1;
+    text-align: center;
+    font-size: 3em;
+    /* margin-left: 111px; */
+    padding-top: 20px;
+    
+    
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    /*Torna possivel alteral a posição do container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     /* margin: 60px; margin: 60px; */
+    /*alterar a posição do eixo*/
+   
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 97px;
+    padding-top: 30px;
+    
+    
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    background-color: rgb(18, 19, 18);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover {
+    background-color: rgba(255, 123, 0, 0.932);
+}
+
+input {
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+    
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+     margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
